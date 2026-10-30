@@ -1,9 +1,8 @@
-# ICCAD 2026 FloorSet Challenge - Requirements
-# Install: pip install -r requirements.txt
-
-torch>=2.0.0
-numpy>=1.24.0
-shapely>=2.0.0
-matplotlib>=3.7.0
-tqdm>=4.60.0
-requests>=2.28.0
+# Core dependencies (pre-installed on contest machines):
+#   Python 3.13, PyTorch 2.12.0+cu130, CUDA 12.5
+#
+# No additional packages needed — bstar_core ships as pre-generated C source
+# (bstar_core.c) compiled by setuptools + GCC (14.2.0 on Debian 13).
+#
+# To rebuild from .pyx instead, install Cython >= 3.0.0 and run:
+#   python3.13 setup.py build_ext --inplace
